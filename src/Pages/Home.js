@@ -7,7 +7,7 @@ const Home = () => {
         <React.Fragment>
             <div className="subheader">
                 <img src={subheader} alt="Vinted-Subheader" />
-                <div>
+                <div className="mb-view-form">
                     <p>Ready to declutter your wardrobe?</p>
                 </div>
             </div>

@@ -161,11 +161,16 @@
     margin-right: 10px;
   }
   
-@media (max-width:900px){
-  .cards-overlay{
-    margin: 0 auto !important;
+  @media (max-width:900px){
+    .cards-overlay{
+      margin: 0 auto !important;
+    }
   }
-}
+  @media (max-width:760px){
+    .mb-view-form{
+      display: none;
+    }
+  }
 
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
