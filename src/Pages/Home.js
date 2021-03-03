@@ -1,0 +1,35 @@
+import React from 'react'
+import subheader from "../assets/subheader.jpeg";
+import Product from '../Components/Product'
+import './Styles/Home.css'
+const Home = () => {
+    return (
+        <React.Fragment>
+            <div className="subheader">
+                <img src={subheader} alt="Vinted-Subheader" />
+                <div>
+                    <p>Ready to declutter your wardrobe?</p>
+                </div>
+            </div>
+
+            <div className="d-flex justify-content-between flex-wrap">
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                
+            </div>
+            {/* 
+      <Link to="/offer">
+        <Product />
+      </Link> */}
+        </React.Fragment>
+    )
+}
+
+export default Home;
