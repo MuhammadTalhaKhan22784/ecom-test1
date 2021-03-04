@@ -12,7 +12,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="d-flex justify-content-between flex-wrap">
+            <div className="pd-main d-flex justify-content-between flex-wrap">
                 <Product />
                 <Product />
                 <Product />

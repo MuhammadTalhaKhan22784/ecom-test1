@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import {useHistory} from 'react-router-dom'
 import "./Tab.css";
 
 function Tab_DropDown(props) {
+  const history = useHistory();
   let { items } = props;
   let [show, setShow] = useState(items.sec_1);
   let [active, setActive] = useState("sec_1");
@@ -70,6 +72,7 @@ function Tab_DropDown(props) {
             </div>
 
             <h1
+              onClick={()=>history.push('/product-home')}
               style={{ color: item.press == active ? "black" : "" }}
               className="dropdown_title"
             >

@@ -28,7 +28,7 @@ function Second_Nav() {
   let items = {
     dropdown_1: {
       main: [
-        { name: "see all", link: "", icon: <CgMenuGridO /> },
+        { name: "see all", link: "/product-home", icon: <CgMenuGridO /> },
         { name: "Clothesl", link: "", press: "sec_1", icon: <GiAmpleDress /> },
         { name: "shoes", link: "", press: "sec_2", icon: <GiRunningShoe /> },
         { name: "bags", link: "", press: "sec_3", icon: <BsFillBagFill /> },

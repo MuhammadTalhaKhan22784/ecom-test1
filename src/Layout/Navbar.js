@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <div className="top-nav navbar navbar-expand-lg navbar-light">
-        <div className="d-flex justify-content-between w-100">
+        <div className="d-flex justify-content-between">
         <Link
           className="navbar-logo"
           style={{ textDecoration: "none", color: "inherit" }}

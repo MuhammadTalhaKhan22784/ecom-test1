@@ -30,6 +30,11 @@
     height: 500px;
     max-width: 1440px;
     width: 100%;
+    top: 50px;
+    z-index: -1 !important;
+  }
+  .pd-main {
+    margin-top: 4rem;
   }
   
   .subheader img {
@@ -44,9 +49,10 @@
     /* border: blue solid 2px; */
     width: 400px;
     height: 250px;
+    top: 50px;
     left: 50px;
     padding: 25px;
-    top: 75px;
+    /* top: 75px; */
   }
   
   .subheader p {

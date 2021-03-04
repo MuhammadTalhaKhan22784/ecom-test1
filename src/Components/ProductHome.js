@@ -2,6 +2,8 @@ import React from 'react'
 import '../Components/Styles/PoductHome.css'
 import MainDropdown from '../Components/DropDowns/MainDropdown'
 import Sider from '../Components/DropDowns/MainDropdown'
+import CategoryDropDown from './categoryDropDown/categoryDropDown'
+import Product from './Product'
 const ProductHome = () => {
     return (
         <React.Fragment>
@@ -19,10 +21,26 @@ const ProductHome = () => {
                         <h3>Women</h3>
                     </div>
                     <hr />
-                    <Sider />
+                    <div className="ct-drpdwn">
+                        <CategoryDropDown />
+                        <CategoryDropDown />
+                        <CategoryDropDown />
+                        <CategoryDropDown />
+                        <CategoryDropDown />
+                        <CategoryDropDown />
+                    </div>
                 </div>
-
+                <div className="product-sec">
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                </div>
             </div>
+
         </React.Fragment>
     )
 }

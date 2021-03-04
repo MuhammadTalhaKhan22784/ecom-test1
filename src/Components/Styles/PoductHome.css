@@ -8,7 +8,8 @@
     background-color: white;
     position: absolute;
     width: 70%;
-    height: 250px;
+    height: max-content;
+    padding-bottom: 2rem;
     margin: 2rem 0 0 5rem;
     border-radius: 2px;
   }
@@ -23,3 +24,16 @@
     padding: 0 !important;
   }
   
+  .ct-drpdwn{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 0 2.5rem;
+  }
+  .product-sec{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 17rem;
+  }
