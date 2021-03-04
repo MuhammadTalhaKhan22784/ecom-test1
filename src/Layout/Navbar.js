@@ -1,6 +1,9 @@
 import React from "react";
 import Second_Nav from "../Layout/Second_Nav";
 import { Link } from "react-router-dom";
+import { AiFillInfoCircle } from "react-icons/ai";
+import MobViewNav from "./MobViewNav";
+
 
 const Navbar = () => {
   return (
@@ -61,10 +64,12 @@ const Navbar = () => {
                 </button>
           <button type="button" className="sell-btn">
             Sell now
-                </button>
-          <i className="fa fa-info-circle" aria-hidden="true"></i>
+          </button>
+          {/* <i className="fa fa-info-circle" aria-hidden="true"></i> */}
+          <AiFillInfoCircle />
         </div>
       </div>
+
       <nav className="navbar navbar-expand-lg navbar-light flex-column">
         <div className="container-fluid d-flex ">
           {/* <Link
@@ -85,7 +90,7 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon" />
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="custom-collapse-nav collapse navbar-collapse" id="navbarSupportedContent">
 
             <div className="mb-view top-btn">
               <button type="button" className="lgn-sign-btn">
@@ -97,6 +102,7 @@ const Navbar = () => {
               <i className="fa fa-info-circle" aria-hidden="true"></i>
             </div>
             <Second_Nav />
+            <MobViewNav />
           </div>
 
         </div>
