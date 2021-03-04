@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import Tabs from "../Components/Tabs/Tabs";
 import Tab from "../Components/Tabs/Tab";
 import Tab_Pan from "../Components/Tabs/Tab_Pan";
@@ -396,7 +397,7 @@ function Second_Nav() {
         ],
       },
     },
-  };   
+  };
   return (
     <div className="second_nav">
       <Tabs defaultTab={""}>
@@ -470,7 +471,7 @@ function Second_Nav() {
               </table>
               <table
                 style={{ marginTop: "20px", width: "400px" }}
-                // className="Tab_Pan_About_table"
+              // className="Tab_Pan_About_table"
               >
                 <thead>
                   <tr style={{ height: "20px" }}>
@@ -481,7 +482,7 @@ function Second_Nav() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="Tab_Pan_About_table_td">about us</td>
+                    <td className="Tab_Pan_About_table_td"><Link className="link" to="about-us"> about us</Link></td>
                     <td className="Tab_Pan_About_table_td">cookies settings</td>
                     <td className="Tab_Pan_About_table_td"></td>
                   </tr>

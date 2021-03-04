@@ -1,0 +1,38 @@
+.about-us-main {
+  width: 100%;
+  height: 1000px;
+}
+.abt-text {
+  display: flex;
+  flex-direction: column;
+  margin: 8rem auto 0 auto;
+  width: 80%;
+}
+.abt-text h1 {
+  letter-spacing: 2px !important;
+}
+.abt-text p {
+  width: 90%;
+}
+.abt-hero {
+  width: 100%;
+}
+.abt-hero img {
+  width: 100%;
+  background-position: center;
+  background-size: 100%;
+}
+.abt-text-2 {
+  margin: 5rem auto;
+  width: 80%;
+  text-align: justify;
+}
+.abt-text-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.abt-text-3 {
+    width: 80%;
+    margin: 5rem auto;
+    text-align: justify;
+}

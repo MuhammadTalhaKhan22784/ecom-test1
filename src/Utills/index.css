@@ -1,0 +1,42 @@
+.text-card {
+  display: flex;
+  justify-content: center;
+}
+.tcard-img {
+}
+.tcard-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*  */
+
+.icard {
+  height: 500px;
+  position: relative;
+}
+.icard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: 100%;
+}
+.icard-text {
+  width: 100%;
+  bottom: 40px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icard-text > p {
+  color: white;
+}
+.icard-text > h2 {
+  color: white;
+}
+.abt-logo {
+  display: flex;
+  justify-content: center;
+}
