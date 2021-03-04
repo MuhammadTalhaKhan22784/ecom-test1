@@ -3,7 +3,7 @@ import './index.css'
 const InvestorsCard = () => {
     return (
         <React.Fragment>
-            <div className="col-lg-4">
+            <div className="col-md-4 col-lg-4 mx-auto">
                 <div className="icard">
                     <img src="https://www.vinted.co.uk/assets/about/justas-milda-0cba330fa37d0eb1dc09ab16a926d26c78ff63040e7912e7ac6eafa7e13179f1.jpg" alt="" />
                     <div className="icard-text">

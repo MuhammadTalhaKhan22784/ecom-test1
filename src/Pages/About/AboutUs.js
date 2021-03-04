@@ -50,6 +50,7 @@ const AboutUs = () => {
                             <AboutLogo />
                             <AboutLogo />
                             <AboutLogo />
+                            <AboutLogo />
                         </div>
                     </div>
                 </div>

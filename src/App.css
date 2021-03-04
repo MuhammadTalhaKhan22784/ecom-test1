@@ -101,6 +101,11 @@ body {
   .second_nav {
     padding-left: 0 !important;
   }
+  .top-hr{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
   .top-nav {
     flex-direction: column;
     width: 100%;
@@ -108,15 +113,23 @@ body {
     margin-left: 0;
     display: flex;
     align-items: flex-start;
+    z-index: 100;
+    background: #fff;
   }
   .navbar-toggler {
-    position: absolute;
-    top: -142px;
-    right: 20px;
+    transform: translateX(-20px);
   }
-  .input-group {
+  .navbar-toggler:focus{
+    outline: none !important;
+    box-shadow: none;
+  }
+  .mb-input{
+    width: 90%;
+    margin: 2rem auto !important;
+  }
+  /* .input-group {
     margin: 2rem 0 !important;
-  }
+  } */
   .top-btn {
     display: none;
   }
@@ -124,6 +137,7 @@ body {
     display: inline-block;
   }
   .mb-view {
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -147,7 +161,7 @@ body {
     margin-top: -37px;
   }
   .custom-collapse-nav {
-    height: max-content !important;
+    height: 100% !important;
     padding-bottom: 10rem;
     overflow-y: scroll;
   }

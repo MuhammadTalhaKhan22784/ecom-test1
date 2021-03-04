@@ -32,7 +32,40 @@
   flex-wrap: wrap;
 }
 .abt-text-3 {
-    width: 80%;
-    margin: 5rem auto;
-    text-align: justify;
+  width: 80%;
+  margin: 5rem auto;
+  text-align: justify;
+}
+
+/*  */
+
+@media (max-width: 960px) {
+  .abt-text {
+    margin: 3rem auto 0 auto;
+    width: 90%;
+  }
+  .abt-text-2 {
+    width: 90%;
+  }
+  .abt-text-3 {
+    width: 90%;
+  }
+  .text-card {
+    justify-content: flex-start;
+  }
+  .tcard-text {
+    width: 100%;
+  }
+  .abt-text-cards .container {
+    max-width: 840px !important;
+  }
+  .icard {
+    width: 100%;
+  }
+  .investors-cards .container {
+    max-width: 100% !important;
+  }
+  .abt-logos .container {
+    max-width: 100%;
+  }
 }
