@@ -7,7 +7,8 @@ import Home from "./Pages/Home";
 import AboutUs from "./Pages/About/AboutUs";
 import Navbar from './Components/navbar2/index'
 import ItemInfoPage from './Pages/item_info_page'
-
+import Signup from './Pages/Signup'
+import Signin from './Pages/Login'
 // import Second_Nav from "./Layout/Second_Nav";
 
 function App() {
@@ -25,6 +26,12 @@ function App() {
             </Route>
             <Route exact path="/about-us">
               <AboutUs />
+            </Route>
+            <Route exact path="/signup">
+              <Signup />
+            </Route>
+            <Route exact path="/signin">
+              <Signin />
             </Route>
             <Route path='/offer' component={ItemInfoPage} />
 

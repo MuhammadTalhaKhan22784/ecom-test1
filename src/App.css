@@ -262,7 +262,7 @@ a {
 
 /* Dropdown Menu */
 
-.dropdown {
+/* .dropdown {
   position: absolute;
   top: 58px;
   width: 300px;
@@ -275,7 +275,7 @@ a {
   max-height: 300px;
   overflow-y: auto;
   transition: height var(--speed) ease;
-}
+} */
 
 .menu {
   width: 100%;

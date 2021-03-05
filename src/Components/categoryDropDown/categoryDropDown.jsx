@@ -51,7 +51,7 @@ const CategoryDropDown = () => {
     }
 
     return (
-        <div className='catalog_drop_down_container'>
+        <div className='ms-4 catalog_drop_down_container'>
             <div>
                 <div>
                     <p onClick={handleOpen} className='catalog_tag'>Catalog <FcExpand /></p>
