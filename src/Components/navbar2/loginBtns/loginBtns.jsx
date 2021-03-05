@@ -3,15 +3,15 @@ import { useHistory } from "react-router-dom";
 import "./style.css";
 import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
 
-const Btns = ({ className }) => {
+const Btns = ({ className ,closeFunc}) => {
   const history = useHistory();
   return (
     <div className={className}>
       <div className="btns_div">
-        <button className="acount_btn" onClick={() => history.push("/signup")}>
+        <button className="acount_btn" onClick={() => {history.push("/signup");closeFunc();}}>
           Sign up
         </button>
-        <button className="acount_btn" onClick={() => history.push("/signin")}>
+        <button className="acount_btn" onClick={() => {history.push("/signin");closeFunc();}}>
           login
         </button>
         <span>

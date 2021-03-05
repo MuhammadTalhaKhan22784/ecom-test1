@@ -4,13 +4,13 @@ import './style.css'
 import Btns from '../loginBtns/loginBtns'
 import LocalMallIcon from '@material-ui/icons/LocalMall';
 
-const MobDropDown = () => {
+const MobDropDown = ({closeFunc}) => {
     const history = useHistory()
     return(
         <div className='mob_dropdown_container'>
             <div className='main_mob_div'>
                 <div className='btns_div_mobview'>
-                    <Btns />
+                    <Btns closeFunc={closeFunc}/>
                        
                 </div>
                 <div>
@@ -18,7 +18,7 @@ const MobDropDown = () => {
                 </div>
                 <div className='mob_view_ul_div'>
                     <ul  className='mob_view_ul'>
-                        <li onClick={()=>history.push("/product-home")}>
+                        <li onClick={()=>{history.push("/product-home");closeFunc();}}>
                            <LocalMallIcon  className='mob_view_icons'/>
                            <p>Women</p>
                         </li>
@@ -56,7 +56,7 @@ const MobDropDown = () => {
                 </div>
                 <div className='mob_view_ul_div'>
                     <ul  className='mob_view_ul'>
-                        <li onClick={()=>history.push('/about-us')}>
+                        <li onClick={()=>{history.push('/about-us');closeFunc();}}>
                            <p>About Us</p>
                         </li>
                         <li>

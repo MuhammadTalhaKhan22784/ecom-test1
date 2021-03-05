@@ -23,13 +23,14 @@ import { FiWatch } from "react-icons/fi";
 import { MdStyle, MdToys } from "react-icons/md";
 import { FaBabyCarriage } from "react-icons/fa";
 import { BiBed } from "react-icons/bi";
+import About_Tab from "../Components/Tabs/About_Tab";
 
 function Second_Nav() {
   const history = useHistory();
   let items = {
     dropdown_1: {
       main: [
-        { name: "see all", link: "/product-home", icon: <CgMenuGridO /> },
+        { name: "see all", link: "/product-home",press : "sec_0", icon: <CgMenuGridO /> },
         { name: "Clothesl", link: "", press: "sec_1", icon: <GiAmpleDress /> },
         { name: "shoes", link: "", press: "sec_2", icon: <GiRunningShoe /> },
         { name: "bags", link: "", press: "sec_3", icon: <BsFillBagFill /> },
@@ -43,7 +44,7 @@ function Second_Nav() {
       ],
       sec_1: {
         item_1: [
-          { name: "see all", link: "", icon: "" },
+          { name: "see all", link: "/yourroute", icon: "" },
           { name: "jumpers & jewellers", link: "", icon: "" },
           { name: "dresses", link: "", icon: "" },
           { name: "tops & T-Shirts", link: "", icon: "" },
@@ -439,71 +440,7 @@ function Second_Nav() {
         <div className="tab-container">
           <Tab label="About" tabIndex={4} />
           <Tab_Pan tabIndex={4}>
-            <div className="Tab_Pan_About">
-              <table className="Tab_Pan_About_table">
-                <thead>
-                  <tr style={{ height: "50px" }}>
-                    <th className="Tab_Pan_About_table_th">Discover</th>
-                    <th className="Tab_Pan_About_table_th">Policies</th>
-                    <th className="Tab_Pan_About_table_th">Communtity</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="Tab_Pan_About_table_td">How it works</td>
-                    <td className="Tab_Pan_About_table_td">trust and safety</td>
-                    <td className="Tab_Pan_About_table_td">forum</td>
-                  </tr>
-                  <tr>
-                    <td className="Tab_Pan_About_table_td">mobail apps</td>
-                    <td className="Tab_Pan_About_table_td">privacy policy</td>
-                  </tr>
-                  <tr>
-                    <td className="Tab_Pan_About_table_td"> help center</td>
-                    <td className="Tab_Pan_About_table_td">
-                      terms & conditions
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="Tab_Pan_About_table_td">info board</td>
-                    <td className="Tab_Pan_About_table_td">cookie policy</td>
-                  </tr>
-                </tbody>
-              </table>
-              <table
-                style={{ marginTop: "20px", width: "400px" }}
-              // className="Tab_Pan_About_table"
-              >
-                <thead>
-                  <tr style={{ height: "20px" }}>
-                    <th className="Tab_Pan_About_table_th">company</th>
-                    <th className="Tab_Pan_About_table_th">privacy</th>
-                    <th className="Tab_Pan_About_table_th"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="Tab_Pan_About_table_td" onClick={() => history.push("/about-us")} 
-                    style={{cursor: "pointer"}}
-                    > about us</td>
-                    <td className="Tab_Pan_About_table_td">cookies settings</td>
-                    <td className="Tab_Pan_About_table_td"></td>
-                  </tr>
-                  <tr>
-                    <td className="Tab_Pan_About_table_td">jobs</td>
-                    <td className="Tab_Pan_About_table_td"></td>
-                  </tr>
-                  <tr>
-                    <td className="Tab_Pan_About_table_td"> press</td>
-                    <td className="Tab_Pan_About_table_td"></td>
-                  </tr>
-                  <tr>
-                    <td className="Tab_Pan_About_table_td">advertising</td>
-                    <td className="Tab_Pan_About_table_td"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <About_Tab />
           </Tab_Pan>
         </div>
       </Tabs>

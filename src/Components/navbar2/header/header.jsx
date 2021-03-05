@@ -71,7 +71,7 @@ const Header = () => {
                 }
             </div>
             {close?
-            <MobDropDown />
+            <MobDropDown closeFunc={handleClose} />
             :
             null
             }
