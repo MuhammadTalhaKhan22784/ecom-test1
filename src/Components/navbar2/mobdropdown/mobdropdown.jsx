@@ -18,7 +18,7 @@ const MobDropDown = () => {
                 </div>
                 <div className='mob_view_ul_div'>
                     <ul  className='mob_view_ul'>
-                        <li>
+                        <li onClick={()=>history.push("/product-home")}>
                            <LocalMallIcon  className='mob_view_icons'/>
                            <p>Women</p>
                         </li>
