@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './style.css'
 import { Link } from "react-router-dom";
 import logo from '../../../assets/logo.png'
-// import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import TocIcon from '@material-ui/icons/Toc';
 import Btns from '../loginBtns/loginBtns'
 import SearchBar from '../searchbar/searchHead'

@@ -3,7 +3,6 @@ import Button from '@material-ui/core/Button';
 import '../Components/Styles/PoductHome.css'
 import { makeStyles } from '@material-ui/core/styles';
 import Pagination from '@material-ui/lab/Pagination';
-import Sider from '../Components/DropDowns/MainDropdown'
 import CategoryDropDown from './categoryDropDown/categoryDropDown'
 import Product from './Product'
 import Chips from '../Utills/Chips'

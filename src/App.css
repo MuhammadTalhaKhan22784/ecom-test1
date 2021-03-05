@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -63,11 +66,7 @@ body {
   color: gray;
 }
 
-/* second nav */
 
-* {
-  box-sizing: border-box;
-}
 .second_nav {
   display: flex;
   width: 100%;
@@ -82,7 +81,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  /* padding: 30px; */
+  
   background-color: white;
   z-index: 1000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -91,7 +90,7 @@ body {
   display: none;
 }
 
-/*  */
+
 
 .mob-view-nav {
   display: none;
@@ -101,7 +100,7 @@ body {
   .second_nav {
     padding-left: 0 !important;
   }
-  .top-hr{
+  .top-hr {
     position: absolute;
     top: 50px;
     width: 100%;
@@ -119,17 +118,15 @@ body {
   .navbar-toggler {
     transform: translateX(-20px);
   }
-  .navbar-toggler:focus{
+  .navbar-toggler:focus {
     outline: none !important;
     box-shadow: none;
   }
-  .mb-input{
+  .mb-input {
     width: 90%;
     margin: 2rem auto !important;
   }
-  /* .input-group {
-    margin: 2rem 0 !important;
-  } */
+  
   .top-btn {
     display: none;
   }
@@ -174,8 +171,8 @@ body {
     flex-direction: column;
   }
   .btm-border {
-    /* margin: 20px 0 !important; */
-    /* border-bottom: 1px solid #80808033; */
+    
+    
   }
   .btm-border svg {
     font-size: 24px;
@@ -184,7 +181,7 @@ body {
   .mob-view-nav h6 {
     color: #999;
   }
-  .light-gray{
+  .light-gray {
     color: #99999994 !important;
   }
 }
@@ -209,17 +206,6 @@ a {
   text-decoration: none;
 }
 
-/* Top Navigation Bar */
-
-/* <nav> */
-/* .navbar {
-  height: var(--nav-size);
-  background-color: var(--bg);
-  padding: 0 1rem;
-  border-bottom: var(--border);
-} */
-
-/* <ul> */
 .navbar-nav {
   max-width: 100%;
   height: 100%;
@@ -227,7 +213,7 @@ a {
   justify-content: flex-end;
 }
 
-/* <li> */
+
 .nav-item {
   width: calc(var(--nav-size) * 0.8);
   display: flex;
@@ -235,7 +221,7 @@ a {
   justify-content: center;
 }
 
-/* Icon Button */
+
 .icon-button {
   --button-size: calc(var(--nav-size) * 0.5);
   width: var(--button-size);
@@ -259,23 +245,6 @@ a {
   width: 20px;
   height: 20px;
 }
-
-/* Dropdown Menu */
-
-/* .dropdown {
-  position: absolute;
-  top: 58px;
-  width: 300px;
-  transform: translateX(-45%);
-  background-color: var(--bg);
-  border: var(--border);
-  border-radius: var(--border-radius);
-  padding: 1rem;
-  overflow: hidden;
-  max-height: 300px;
-  overflow-y: auto;
-  transition: height var(--speed) ease;
-} */
 
 .menu {
   width: 100%;
@@ -306,7 +275,7 @@ a {
   margin-left: auto;
 }
 
-/* CSSTransition classes  */
+
 .menu-primary-enter {
   position: absolute;
   transform: translateX(-110%);
@@ -342,7 +311,7 @@ a {
   color: black;
 }
 
-/* footer */
+
 .footer {
   width: 100%;
   height: max-content;
@@ -362,8 +331,7 @@ a {
   width: 80%;
   line-height: 2.2rem;
 }
-.ft-text-1 {
-}
+
 .ft-text-2 {
   margin-left: 20%;
 }
