@@ -171,6 +171,9 @@
     .cards-overlay{
       margin: 0 auto !important;
     }
+    .pd-main {
+      justify-content: center !important;
+    }
   }
   @media (max-width:760px){
     .mb-view-form{
