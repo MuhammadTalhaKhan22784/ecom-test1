@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 import Tabs from "../Components/Tabs/Tabs";
 import Tab from "../Components/Tabs/Tab";
 import Tab_Pan from "../Components/Tabs/Tab_Pan";
@@ -25,6 +25,7 @@ import { FaBabyCarriage } from "react-icons/fa";
 import { BiBed } from "react-icons/bi";
 
 function Second_Nav() {
+  const history = useHistory();
   let items = {
     dropdown_1: {
       main: [
@@ -482,7 +483,9 @@ function Second_Nav() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="Tab_Pan_About_table_td"><Link className="link" to="about-us"> about us</Link></td>
+                    <td className="Tab_Pan_About_table_td" onClick={() => history.push("/about-us")} 
+                    style={{cursor: "pointer"}}
+                    > about us</td>
                     <td className="Tab_Pan_About_table_td">cookies settings</td>
                     <td className="Tab_Pan_About_table_td"></td>
                   </tr>
