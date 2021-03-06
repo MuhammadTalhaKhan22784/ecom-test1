@@ -1,5 +1,6 @@
 .user-profile {
   width: 100%;
+  padding-top: 2rem;
   height: max-content;
   padding-bottom: 10rem;
   display: flex;
@@ -12,61 +13,304 @@
   display: flex;
   padding-left: 50px;
   flex-direction: column;
-  border: 1px solid black;
 }
-.user-img-card{
-    width: 80%;
+.user-img-card {
+  width: 80%;
 }
-.user-img-card img{
-    width: 100%;
-    border: 1px solid #80808038;
+.user-img-card img {
+  width: 100%;
+  border: 1px solid #80808038;
 }
-.user-info{
-    border: 1px solid #80808038;
-    width: 80%;
-    padding: 0.8rem 0.9rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.user-info {
+  border: 1px solid #80808038;
+  width: 80%;
+  padding: 0.8rem 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.user-info h2{
-
+.user-info h2 {
 }
 .user-views {
-    width: 80%;
-    padding: 0.8rem 0.9rem;
-    border: 1px solid #80808038;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+  width: 80%;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid #80808038;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
-.user-star{
-    display: flex;
-
+.user-star {
+  display: flex;
 }
 .user-star svg {
-    color: #f7c600;
-    margin-right: 2px;
+  color: #f7c600;
+  margin-right: 2px;
 }
-.user-social{
-    width: 80%;
-    padding:0.8rem 1rem;
-    border: 1px solid #80808038;
+.user-social {
+  width: 80%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #80808038;
 }
 .user-social span {
-    color: #999;
+  color: #191717;
 }
 .user-social svg {
-    color: #999; 
-    font-size: 1.2rem;
-    margin-right: 0.5rem;
+  color: #999;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
 }
-.us-links{
-    display: flex;
-    align-items: center;
+.us-links {
+  display: flex;
+  align-items: center;
+}
+.us-links strong {
+  color: #09b1ba;
+  font-weight: 400;
+}
+.user-address {
+  width: 80%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #80808038;
+}
+.user-address span {
+  color: #191717;
+}
+.user-address svg {
+  color: #999;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+.user-btns {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  border: 1px solid #80808038;
+}
+.user-btns > button {
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+}
+.msg-btn {
+  border: 1px solid #09b1ba;
+  background-color: white;
+  color: #09b1ba;
+  font-weight: 400;
+}
+.follow-btn {
+  background-color: #09b1ba;
+  border: none;
+  color: white;
+  font-weight: 400;
 }
 .userproducts {
   width: 70%;
-  height: 600px;
-  border: 1px solid red;
+  height: max-content;
+  padding-bottom: 5rem;
+}
+.shop-bundles {
+  width: 90%;
+  border: 1px solid #80808038;
+  padding: 1rem 2rem;
+}
+.get-upto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.get-upto span {
+  color: #423b3b9e;
+}
+.get-upto svg {
+  color: #999;
+}
+.prd-categories {
+  width: 90%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products-cards {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.mbview-user-profile {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+    .userinfo-card{
+        padding-left: 10px;
+        align-items: center;
+    }
+}
+@media (max-width: 960px) {
+  .user-profile {
+    display: none;
+  }
+  .mbview-user-profile {
+    display: flex;
+    width: 100% !important;
+  }
+  .userprofile-tabs {
+    width: 100% !important;
+  }
+  .mbview-user-info {
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    border: 1px solid #80808038;
+  }
+  /* .mbview-user-info > div > div{
+        width: 90%;
+    } */
+  .user-info {
+    border: none;
+    padding: 0;
+  }
+  .user-views {
+    border: none;
+    padding: 0;
+  }
+  .profile-navs {
+    width: 50% !important;
+    height: 50px;
+  }
+  /* .profile-navs {
+    border-bottom: 2px solid #09b1ba !important;
+    background-color: #8080800f !important;
+  } */
+  .user-star {
+    align-items: center;
+  }
+  .user-social {
+    width: 100%;
+  }
+  .mbview-userpic {
+    width: 8%;
+  }
+  .mbview-userpic svg {
+    font-size: 50px;
+  }
+  .user-btns {
+    width: 100%;
+  }
+  .user-btns button {
+    width: 45%;
+  }
+  .shop-bundles {
+    width: 100%;
+  }
+  .get-upto svg {
+    margin-top: -21px;
+  }
+  .prd-categories {
+    width: 100%;
+  }
+  .profile-nav-link {
+    background-color: transparent !important;
+    /* border-bottom: 1px solid #80808038 !important; */
+
+    color: black !important;
+  }
+  .nav-item.profile-navs.active {
+    border-bottom: 2px solid #09b1ba !important;
+    background-color: #8080800f !important;
+  }
+  /*  */
+  .mbview-userabout {
+    width: 100%;
+    display: flex;
+  }
+  .user-img-card {
+    width: 78%;
+  }
+  .user-img-card img {
+    width: 100%;
+  }
+  .mbview-about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mbview-about .user-info {
+    width: 80%;
+    padding: 0.8rem 0.9rem;
+    border: 1px solid #80808038;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mbview-about .user-views {
+    width: 80%;
+    padding: 0.8rem 0.9rem;
+    border: 1px solid #80808038;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mbview-about .user-social {
+    width: 80%;
+    padding: 0.8rem 0.9rem;
+    border: 1px solid #80808038;
+    line-height: 1.9em;
+  }
+  .mbview-about .user-btns {
+    width: 80%;
+    padding: 0.8rem 0.9rem 1rem 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mbview-userabout {
+    flex-direction: column;
+  }
+  .user-img-card {
+    width: 100%;
+  }
+  .mbview-about .user-info {
+    width: 100%;
+    padding: 20px;
+  }
+  .mbview-about .user-views {
+    width: 100%;
+    padding: 20px;
+  }
+  .mbview-about .user-social {
+    width: 100%;
+    padding: 20px;
+  }
+  .user-address {
+    width: 100%;
+    padding: 20px;
+  }
+  .mbview-about .user-btns {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mbview-userpic {
+    width: 12%;
+  }
+}
+
+@media (max-width: 500px) {
+  .mbview-userpic {
+    width: 20%;
+  }
+  .products-cards{
+      justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .mbview-userpic {
+    width: 28%;
+  }
 }

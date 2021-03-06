@@ -77,7 +77,7 @@ import "./Styles/Forms.css";
 const Signup = () => {
   return (
     <React.Fragment>
-      <div className="signup-form">
+      <div className="main-form">
         <div>
           <h2>Sign up</h2>
         </div>

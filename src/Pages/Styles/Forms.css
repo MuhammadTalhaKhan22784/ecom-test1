@@ -1,26 +1,31 @@
-.signup-form {
+.main-form {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 600px;
+  margin-bottom: 5rem;
 }
-.signup-form .form {
-  width: 23%;
+.signin-form {
+  width: 100%;
+}
+
+.main-form .form {
+  width: 350px;
   padding-top: 2rem;
 }
 
-.signup-form .form > input {
+.main-form .form > input {
   background-color: white !important;
 }
-.signup-form .form label{
-    color: black;
-    font-weight: 500;
+.main-form .form label {
+  color: black;
+  font-weight: 500;
 }
-.signup-form .form strong {
-    color: #09B1BA;
-    font-weight: 400;
+.main-form .form strong {
+  color: #09b1ba;
+  font-weight: 400;
 }
 .signup-btn {
   display: flex;
@@ -34,6 +39,6 @@
   text-align: center !important;
   background-color: #09b1ba;
 }
-.signup-btn:hover{
-    color: white;
+.signup-btn:hover {
+  color: white;
 }

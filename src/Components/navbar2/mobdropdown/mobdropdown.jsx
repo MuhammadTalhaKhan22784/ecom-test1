@@ -22,11 +22,11 @@ const MobDropDown = ({closeFunc}) => {
                            <LocalMallIcon  className='mob_view_icons'/>
                            <p>Women</p>
                         </li>
-                        <li>
+                        <li onClick={()=>{history.push("/product-home/men/see all");closeFunc();}}>
                            <LocalMallIcon  className='mob_view_icons'/>
                            <p>Men</p>
                         </li>
-                        <li>
+                        <li onClick={()=>{history.push("/product-home/kids/see all");closeFunc();}}>
                            <LocalMallIcon  className='mob_view_icons'/>
                            <p>Kids</p>
                         </li>
