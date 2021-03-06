@@ -10,10 +10,10 @@ function Tab_DropDown(props) {
   let [active, setActive] = useState("sec_1");
   let { activeTab, setActiveTab } = useContext(Tab_Context_Provider)
 
-  let showItems = (id,link) => {
 
+  let showItems = (id,link,pname) => {
     if (id === "sec_0") {
-      history.push(link)
+      history.push(`${link}`)
       setActiveTab("")
       return;
     }
@@ -62,7 +62,12 @@ function Tab_DropDown(props) {
       setActive("sec_9");
       return;
     }
-  };
+  }; 
+
+  let side_routes = (link,name) => {
+    history.push(link)
+    setActiveTab("")
+  }
 
   return (
     <div className="Tab_DropDown">
@@ -72,7 +77,7 @@ function Tab_DropDown(props) {
             style={{ padding: props.padding }}
             key={index}
             className="dropdown_content"
-            onClick={() => showItems(item.press,item.link)}
+            onClick={() => showItems(item.press,item.link,item.name)}
           >
             <div style={{ fontSize: props.iconSize }} className="icon">
               {item.icon}{" "}
@@ -93,7 +98,7 @@ function Tab_DropDown(props) {
           <div
             style={{ padding: props.sec2and3_padding }}
             className="dropdown_content_2"
-            onClick={() => history.push(item.link)}
+            onClick={() => side_routes(item.link,item.name)}
             >
             <h3 className="dropdown_title">{item.name}</h3>
           </div>
@@ -103,7 +108,7 @@ function Tab_DropDown(props) {
         {show.item_2.map((item, index) => (
           <div
           style={{ padding: props.sec2and3_padding }}
-          onClick={() => history.push(item.link)}
+          onClick={() => side_routes(item.link,item.name)}
           className="dropdown_content_2"
           >
             <h3 className="dropdown_title">{item.name}</h3>

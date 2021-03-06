@@ -14,11 +14,11 @@ const MobDropDown = ({closeFunc}) => {
                        
                 </div>
                 <div>
-                    <p className='category_tag'>Categories</p>
+                    <p className='category_tag'>Categories</p> 
                 </div>
                 <div className='mob_view_ul_div'>
                     <ul  className='mob_view_ul'>
-                        <li onClick={()=>{history.push("/product-home");closeFunc();}}>
+                        <li onClick={()=>{history.push("/product-home/women/see all");closeFunc();}}>
                            <LocalMallIcon  className='mob_view_icons'/>
                            <p>Women</p>
                         </li>

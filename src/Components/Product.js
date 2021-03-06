@@ -1,11 +1,16 @@
 import React from "react";
-import "./Styles/Product.css";
 import { Link } from "react-router-dom";
+import { FaUserCircle } from 'react-icons/fa';
+import "./Styles/Product.css";
 
 const Product = () => {
   return (
     <React.Fragment>
       <div className="product-card">
+        <div className="p-1 pd-card-top d-flex align-items-center">
+          <FaUserCircle style={{fontSize:"22px", marginLeft: "4px"}}/>
+          <h5 className="ms-3" style={{fontSize:"18px", paddingTop: "7px"}}>User</h5>
+        </div>
         <i className="far fa-heart"></i>
         <h6>Louis asda</h6>
 

@@ -18,15 +18,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Chips() {
+export default function Chips(props) {
   const classes = useStyles();
   const [chipData, setChipData] = React.useState([
-    { key: 0, label: 'Women' },
+    { key: 0 },
   ]);
-
   const handleDelete = (chipToDelete) => () => {
     setChipData((chips) => chips.filter((chip) => chip.key !== chipToDelete.key));
   };
+  console.log("chip name", props.name)
 
   return (
     <div component="ul" className={classes.root}>
@@ -41,7 +41,7 @@ export default function Chips() {
           <li key={data.key}>
             <Chip
               icon={icon}
-              label={data.label}
+              label={props.name === "see all" ? props.id : props.name}
               onDelete={data.label === 'React' ? undefined : handleDelete(data)}
               className={classes.chip}
             />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import Button from '@material-ui/core/Button';
 import '../Components/Styles/PoductHome.css'
 import { makeStyles } from '@material-ui/core/styles';
@@ -6,7 +6,7 @@ import Pagination from '@material-ui/lab/Pagination';
 import CategoryDropDown from './categoryDropDown/categoryDropDown'
 import Product from './Product'
 import Chips from '../Utills/Chips'
-import { Link } from 'react-router-dom';
+import { Link,useParams } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -16,10 +16,12 @@ const useStyles = makeStyles((theme) => ({
     },
     
   }));
-const ProductHome = () => {
+const ProductHome = (props) => {
     const classes = useStyles();
+    let {id,name} = useParams()
+    console.log(id,name);
 
-    return (
+    return ( 
         <React.Fragment>
             <div className="product-home">
                 <div className="ph-box">
@@ -27,12 +29,12 @@ const ProductHome = () => {
                         <nav aria-label="breadcrumb">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><a href="#">Home</a></li>
-                                <li className="breadcrumb-item active" aria-current="page">Library</li>
+                                <li className="breadcrumb-item active" aria-current="page"> {id}  {name == "see all" ? "" :  `/ ${name}`}</li>
                             </ol>
                         </nav>
                     </div>
                     <div className="ps-4 ph-text">
-                        <h3>Women</h3>
+                        <h3>{name == "see all" ? id : name }</h3>
                     </div>
                     <hr />
                     <div className="ct-drpdwn">
@@ -40,7 +42,7 @@ const ProductHome = () => {
                     </div>
                 </div>
                 <div className="ph-item-1">
-                    <Chips />
+                    <Chips name={name} id={id} />
                     <Button color="primary">Clear filter</Button>
                 </div>
                 <div className="ms-2 mt-2 ph-item-2">

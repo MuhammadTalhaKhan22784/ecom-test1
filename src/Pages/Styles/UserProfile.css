@@ -1,0 +1,72 @@
+.user-profile {
+  width: 100%;
+  height: max-content;
+  padding-bottom: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.userinfo-card {
+  width: 30%;
+  height: max-content;
+  padding-bottom: 2rem;
+  display: flex;
+  padding-left: 50px;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.user-img-card{
+    width: 80%;
+}
+.user-img-card img{
+    width: 100%;
+    border: 1px solid #80808038;
+}
+.user-info{
+    border: 1px solid #80808038;
+    width: 80%;
+    padding: 0.8rem 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-info h2{
+
+}
+.user-views {
+    width: 80%;
+    padding: 0.8rem 0.9rem;
+    border: 1px solid #80808038;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.user-star{
+    display: flex;
+
+}
+.user-star svg {
+    color: #f7c600;
+    margin-right: 2px;
+}
+.user-social{
+    width: 80%;
+    padding:0.8rem 1rem;
+    border: 1px solid #80808038;
+}
+.user-social span {
+    color: #999;
+}
+.user-social svg {
+    color: #999; 
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+.us-links{
+    display: flex;
+    align-items: center;
+}
+.userproducts {
+  width: 70%;
+  height: 600px;
+  border: 1px solid red;
+}
