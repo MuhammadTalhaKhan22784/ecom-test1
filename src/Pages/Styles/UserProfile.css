@@ -142,10 +142,10 @@
 }
 
 @media (max-width: 1024px) {
-    .userinfo-card{
-        padding-left: 10px;
-        align-items: center;
-    }
+  .userinfo-card {
+    padding-left: 10px;
+    align-items: center;
+  }
 }
 @media (max-width: 960px) {
   .user-profile {
@@ -304,13 +304,32 @@
   .mbview-userpic {
     width: 20%;
   }
-  .products-cards{
-      justify-content: center;
+  .products-cards {
+    justify-content: center;
   }
 }
 
 @media (max-width: 400px) {
   .mbview-userpic {
     width: 28%;
+  }
+}
+@media (max-width: 360px) {
+  .user-star span {
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 320px) {
+  .mbview-userpic svg {
+    font-size: 35px;
+  }
+  .mbview-user-info {
+    padding: 20px 6px;
+  }
+  .main_header_container {
+    padding: 10px 15px;
+  }
+  .navbar_logo {
+    padding: 8px 15px;
   }
 }
