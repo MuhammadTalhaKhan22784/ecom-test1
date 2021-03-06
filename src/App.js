@@ -10,6 +10,10 @@ import ItemInfoPage from './Pages/item_info_page'
 import Signup from './Pages/Signup'
 import Signin from './Pages/Login'// import Second_Nav from "./Layout/Second_Nav";
 import UserProfile from "./Pages/User Profile/UserProfile";
+import GetAppScreen from "./Pages/getapp";
+import HelpCenterPage from "./Pages/helpcneter";
+import InfoBoard from "./Pages/infoboard";
+import HowItWork from "./Pages/howItWork";
 
 function App() {
   return (
@@ -36,6 +40,10 @@ function App() {
           <Route exact path="/user-profile">
             <UserProfile />
           </Route>
+          <Route path='/app' component={GetAppScreen} />
+          <Route path='/help-center' component={HelpCenterPage} />
+          <Route path='/infoboard' component={InfoBoard} />
+          <Route path='/how-it-work' component={HowItWork} />
         </Switch>
       </Router>
     </React.Fragment>

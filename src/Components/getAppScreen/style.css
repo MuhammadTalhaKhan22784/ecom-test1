@@ -1,0 +1,64 @@
+.main_app_div{
+    display: flex;
+    justify-content: space-around;
+    /* padding: 0px 150px; */
+}
+.mob_para_div{
+    /* border: 2px solid; */
+    width: 400px ;
+    margin-top: 150px;
+    /* background-color: blue; */
+}
+.mobHead{
+    font-size: 2em;
+    font-weight: 600;
+}
+.mob_para{
+    margin-top: 8px;
+   color: gray;
+}
+.storeImg{
+    width: 130px;
+    object-fit: contain;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+.storeImg2{
+    width: 130px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.storeImg:hover,.storeImg2:hover{
+    cursor: pointer;
+}
+.mob_img{
+    height: 82vh;
+}
+
+@media screen and (max-width:950px){
+    .main_app_div{
+        flex-direction: column;
+        justify-content: center ;
+        padding: 0px 25px;
+        text-align: center;
+    }
+    .mob_para_div{
+        width: auto;
+        margin-top: 50px;
+        text-align: start;
+    }
+    .mob_img{
+        /* text-align: center; */
+        /* margin: 0px auto; */
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .mobHead{
+        font-size: 1.5em;
+    }
+}

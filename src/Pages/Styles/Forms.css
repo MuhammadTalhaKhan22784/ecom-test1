@@ -42,3 +42,15 @@
 .signup-btn:hover {
   color: white;
 }
+
+@media (max-width: 400px) {
+  .main-form .form {
+    width: 300px;
+    padding-top: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .search_bar {
+    width: 140px;
+  }
+}

@@ -1,0 +1,54 @@
+.infoboard_container{
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+.main_infoboard_div{
+    width: 700px;
+    /* border: 2px solid; */
+    padding: 100px 60px;
+    margin: 0px auto;
+    border-bottom: 1px solid rgb(211, 208, 208);
+}
+.shipping_head{
+    line-height: 1.5em;
+    font-size: 3em;
+}
+.date_infoboard{
+    margin-top: 20px;
+    color: rgb(194, 192, 192);
+
+}
+.img1_infoboard{
+    width: 100%;
+    margin-top: 50px;
+}
+.shipping_info_para1{
+    margin-top: 30px;
+    font-weight: 600;
+    color: gray;
+    line-height: 1.5em;
+}
+.shipping_head2{
+    margin-top: 30px;
+}
+.shipping_para2{
+    margin-top: 30px;
+    color: gray;
+    line-height: 1.5em;
+}
+.shipping_link{
+    color: #09B1BA;
+}
+
+@media screen and (max-width:720px){
+    .main_infoboard_div{
+        width: 100%;
+        padding: 100px 25px;
+    }
+    .shipping_head{
+        font-size: 2em;
+    }
+    .shipping_head2{
+        line-height: 1.5em;
+    }
+}
