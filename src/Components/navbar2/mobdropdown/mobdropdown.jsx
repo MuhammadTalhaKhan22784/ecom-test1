@@ -114,7 +114,12 @@ const MobDropDown = ({ closeFunc }) => {
         </div>
         <div className="mob_view_ul_div">
           <ul className="mob_view_ul">
-            <li>
+            <li
+              onClick={() => {
+                history.push("/safety");
+                closeFunc();
+              }}
+            >
               <p>Trust And Safety</p>
             </li>
             <li>

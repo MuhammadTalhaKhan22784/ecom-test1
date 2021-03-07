@@ -352,3 +352,21 @@ a {
 .ft-btns{
   line-height: 50px;
 }
+
+@media(max-width:768px){
+  .ft-btns{
+    display: none;
+  }
+  .ft-links{
+    width: 95%;
+  }
+}
+
+@media (max-width:400px){
+  .ft-links{
+    flex-direction: column;
+  }
+  .ft-text-2 {
+    margin-left: 0 !important;
+  }
+}

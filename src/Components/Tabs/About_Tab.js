@@ -29,7 +29,10 @@ function About_Tab() {
               onClick={() => send_Page("/how-it-work")}
               style={{ cursor: "pointer" }}
             >How it works</td>
-            <td className="Tab_Pan_About_table_td">trust and safety</td>
+            <td
+              onClick={() => send_Page("/safety")}
+              style={{ cursor: "pointer" }}
+              className="Tab_Pan_About_table_td">trust and safety</td>
             <td className="Tab_Pan_About_table_td">forum</td>
           </tr>
           <tr>

@@ -1,0 +1,62 @@
+p {
+  text-transform: none !important;
+}
+
+.container-ts {
+  width: 70%;
+  margin: 0 auto;
+}
+.tspagetext-1 {
+  margin-top: 8rem;
+}
+.tspagetext-1 h2 {
+  font-weight: 400;
+}
+.trustsafety-page .text-card {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.trustsafety-page .tcard-text {
+  width: 90%;
+  line-height: 1.6;
+}
+.tscommunity-cards {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+}
+.tscommunity-text {
+  width: 80%;
+}
+.tips-section span {
+  color: #09b1ba;
+}
+.tscommunity-img {
+  /* width: 30%; */
+}
+.tscommunity-text {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .container-ts {
+    width: 90%;
+  }
+}
+@media (max-width: 760px) {
+  .tscommunity-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .tscommunity-text{
+      width: 100%;
+  }
+}
+@media (max-width: 340px){
+    .ts-h1{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+}
