@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './style.css'
 import { Link } from "react-router-dom";
-import logo from '../../../assets/logo.png'
 import TocIcon from '@material-ui/icons/Toc';
 import Btns from '../loginBtns/loginBtns'
 import SearchBar from '../searchbar/searchHead'
@@ -39,7 +38,6 @@ const Header = () => {
     return (
         <div className='header_container'>
             <div className='main_header_container'>
-                {/* <img src={logo} alt=""/> */}
                 <h2 className="navbar_logo">
                     <Link style={{ textDecoration: "none", color: "inherit" }} to="/">
                         DIBSTUFF

@@ -7,7 +7,6 @@ import TagFacesIcon from '@material-ui/icons/TagFaces';
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    // justifyContent: 'center',
     flexWrap: 'wrap',
     listStyle: 'none',
     padding: theme.spacing(0.5),

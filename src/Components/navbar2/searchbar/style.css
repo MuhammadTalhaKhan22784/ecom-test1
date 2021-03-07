@@ -38,6 +38,7 @@
   /* min-width: 650px; */
   width: 650px;
   /* border: 2px solid; */
+  outline: none;
 }
 .clear_search {
   text-align: right;
@@ -93,5 +94,32 @@
     .search_container {
       width: 82%;
   }
+  }
+  
+  @media screen and (max-width: 405px) {
+    .search_container {
+      /* border: 2px solid; */
+      width: 100%;
+      padding: 0px 10px;
+      margin-top: 10px;
+  }
+  .select > option{
+        padding: 0px;
+    }
+    .select{
+      padding: 9px 0px;
+      font-size: .8em;
+    }
+    .search_div{
+      height: 37px;
+      /* width: 100%; */
+    }
+    .clear_search{
+      font-size: 1.2em;
+    }
+    .search_bar{
+      font-size: .8em;
+      width: 100%;
+    }
   }
   

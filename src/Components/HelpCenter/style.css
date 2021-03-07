@@ -1,9 +1,13 @@
+
 .main_help_center_div{
     display: flex;
     justify-content: center;
-    background-color: rgb(224, 221, 221);
+    background-color: rgb(243, 240, 240);
     padding-top: 50px;
     padding-bottom: 50px;
+    min-height: 100vh;
+    /* height: 110vh; */
+    /* height: min-content; */
 }
 .help_search_div{
     /* border: 2px solid; */
@@ -21,6 +25,8 @@
 }
 .help_search_div>div>input{
     width: 100%;
+    outline: none;
+    border: none;
 }
 .helpcenter_head{
     font-size: 1.5em;
@@ -86,6 +92,19 @@
     background-color: rgb(50, 153, 153);
 }
 
+.help_nested_ul>li{
+    font-size: .9em;
+    padding: 10px 20px;
+   color: rgb(167, 162, 162);
+
+}
+.help_nested_ul>li:hover{
+    background-color: rgb(209, 212, 209);
+    cursor: pointer;
+}
+
+
+
 @media screen and (max-width:950px){
     .helpcenter_list_div{
         display: none;
@@ -115,6 +134,11 @@
 
     }
 }
+@media screen and (max-width:405px){
+    .main_help_center_div{
+        margin-top: 15px;
+    }
+}
 @media screen and (max-width:365px){
     .table_div_helpcenter>div{
         width: 50%;
@@ -123,5 +147,96 @@
     }
     .helpcenter_table_div,.help_search_div{
         width: 90%;
+    }
+}
+
+       
+       /* keywords link component */
+
+.main_keyWords_links_div{
+    width: 550px;
+    background-color: white;
+    margin-left: 40px;
+    padding-top: 5px ;
+}       
+.keyWords_links_ul>li{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px 5px 15px;
+  border-bottom: 1px solid rgb(211, 206, 206);
+} 
+.keyWords_links_ul>li:hover{
+    cursor: pointer;
+    background-color: rgb(250, 252, 250);
+}
+.keyWords_links_sub_div_li{
+    display: flex;
+}
+.keyWords_links_head{
+    padding-top: 15px;
+    margin-left: 15px;
+}
+.keyWords_links_recommend{
+    margin-left: 15px;
+    margin-top: 22px;
+    font-size: .8em;
+    color: gray;
+}
+.keyWords_links_icon{
+    font-size: 1.3em;
+    color: gray;
+
+}
+.keyWords_links_li_para{
+    margin-left: 6px;
+    margin-top: -3px;
+}
+
+@media screen and (max-width:950px){
+    .main_keyWords_links_div{
+        /* border: 2px solid; */
+        width: 95%;
+        margin-left: 0px;
+        margin: 0px auto;
+    }
+    .keyWords_links_container{
+        /* border: 2px solid; */
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .keyWords_links_li_para{
+        font-size: .9em;
+    }
+}
+
+
+              /* detail component  */
+
+.main_help_detail_div{
+    width: 550px;
+    background-color: white;
+    padding: 15px 20px;
+    margin-left: 40px;
+}
+.detail_head{
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+.detail_para{
+    margin-top: 20px;
+    color: gray;
+    font-size: .9em;
+}
+
+@media screen and (max-width:950px){
+    .help_detail_container{
+        width: 100%;
+
+    }
+    .main_help_detail_div{
+        width: 90%;
+        margin: 0px auto;
     }
 }
