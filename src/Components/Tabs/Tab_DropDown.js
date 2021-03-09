@@ -80,7 +80,7 @@ function Tab_DropDown(props) {
             onClick={() => showItems(item.press,item.link,item.name)}
           >
             <div style={{ fontSize: props.iconSize }} className="icon">
-              {item.icon}{" "}
+              {item.icon}
             </div>
 
             <h1

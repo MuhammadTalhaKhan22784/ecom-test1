@@ -1,17 +1,15 @@
-import React, { useContext } from 'react'
-import { Tab_Context_Provider } from "./Tabs"
-import { useHistory } from "react-router-dom"
+import React, { useContext } from "react";
+import { Tab_Context_Provider } from "./Tabs";
+import { useHistory } from "react-router-dom";
 
 function About_Tab() {
-  let { activeTab, setActiveTab } = useContext(Tab_Context_Provider)
-  let history = useHistory()
-
-
+  let { activeTab, setActiveTab } = useContext(Tab_Context_Provider);
+  let history = useHistory();
 
   let send_Page = (route) => {
-    setActiveTab("")
-    history.push(route)
-  }
+    setActiveTab("");
+    history.push(route);
+  };
 
   return (
     <div className="Tab_Pan_About">
@@ -25,44 +23,76 @@ function About_Tab() {
         </thead>
         <tbody>
           <tr>
-            <td className="Tab_Pan_About_table_td"
+            <td
+              className="Tab_Pan_About_table_td"
               onClick={() => send_Page("/how-it-work")}
               style={{ cursor: "pointer" }}
-            >How it works</td>
+            >
+              How it works
+            </td>
             <td
               onClick={() => send_Page("/safety")}
               style={{ cursor: "pointer" }}
-              className="Tab_Pan_About_table_td">trust and safety</td>
+              className="Tab_Pan_About_table_td"
+            >
+              trust and safety
+            </td>
             <td className="Tab_Pan_About_table_td">forum</td>
           </tr>
           <tr>
-            <td className="Tab_Pan_About_table_td"
+            <td
+              className="Tab_Pan_About_table_td"
               onClick={() => send_Page("/app")}
               style={{ cursor: "pointer" }}
-            >mobail apps</td>
-            <td className="Tab_Pan_About_table_td">privacy policy</td>
+            >
+              mobail apps
+            </td>
+            <td
+              onClick={() => send_Page("/privacy")}
+              style={{ cursor: "pointer" }}
+              className="Tab_Pan_About_table_td"
+            >
+              privacy policy
+            </td>
           </tr>
           <tr>
-            <td className="Tab_Pan_About_table_td"
+            <td
+              className="Tab_Pan_About_table_td"
               onClick={() => send_Page("/help-center")}
               style={{ cursor: "pointer" }}
-            > help center</td>
-            <td className="Tab_Pan_About_table_td">
+            >
+              help center
+            </td>
+            <td
+              onClick={() => send_Page("/terms_and_condition")}
+              style={{ cursor: "pointer" }}
+              className="Tab_Pan_About_table_td"
+              className="Tab_Pan_About_table_td"
+            >
               terms & conditions
-              </td>
+            </td>
           </tr>
           <tr>
-            <td className="Tab_Pan_About_table_td"
+            <td
+              className="Tab_Pan_About_table_td"
               onClick={() => send_Page("/infoboard")}
               style={{ cursor: "pointer" }}
-            >info board</td>
-            <td className="Tab_Pan_About_table_td">cookie policy</td>
+            >
+              info board
+            </td>
+            <td
+              onClick={() => send_Page("/cookie-policy")}
+              style={{ cursor: "pointer" }}
+              className="Tab_Pan_About_table_td"
+            >
+              cookie policy
+            </td>
           </tr>
         </tbody>
       </table>
       <table
         style={{ marginTop: "20px", width: "400px" }}
-      // className="Tab_Pan_About_table"
+        // className="Tab_Pan_About_table"
       >
         <thead>
           <tr style={{ height: "20px" }}>
@@ -73,9 +103,13 @@ function About_Tab() {
         </thead>
         <tbody>
           <tr>
-            <td className="Tab_Pan_About_table_td" onClick={() => send_Page("/about-us")}
+            <td
+              className="Tab_Pan_About_table_td"
+              onClick={() => send_Page("/about-us")}
               style={{ cursor: "pointer" }}
-            > about us</td>
+            >
+              about us
+            </td>
             <td className="Tab_Pan_About_table_td">cookies settings</td>
             <td className="Tab_Pan_About_table_td"></td>
           </tr>
@@ -94,7 +128,7 @@ function About_Tab() {
         </tbody>
       </table>
     </div>
-  )
+  );
 }
 
-export default About_Tab
+export default About_Tab;

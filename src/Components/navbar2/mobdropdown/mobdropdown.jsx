@@ -122,13 +122,28 @@ const MobDropDown = ({ closeFunc }) => {
             >
               <p>Trust And Safety</p>
             </li>
-            <li>
+            <li
+              onClick={() => {
+                history.push("/privacy");
+                closeFunc();
+              }}
+            >
               <p>Privacy</p>
             </li>
-            <li>
+            <li
+              onClick={() => {
+                history.push("/terms_and_condition");
+                closeFunc();
+              }}
+            >
               <p>Terms</p>
             </li>
-            <li>
+            <li
+              onClick={() => {
+                history.push("/cookie-policy");
+                closeFunc();
+              }}
+            >
               <p>Cookie Policy </p>
             </li>
           </ul>

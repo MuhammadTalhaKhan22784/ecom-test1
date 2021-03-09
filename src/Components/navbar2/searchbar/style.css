@@ -88,6 +88,8 @@
   .search_container {
     width: 85%;
     margin: 0 auto;
+    padding: 8px 10px !important;
+    margin-top: 0 !important;
 }
 }
 @media screen and (max-width: 375px) {

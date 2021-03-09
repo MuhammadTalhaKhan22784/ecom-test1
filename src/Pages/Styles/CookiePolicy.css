@@ -1,0 +1,39 @@
+.cookiepolicy-page {
+  background-color: #ebedee;
+  width: 100%;
+  height: max-content;
+  padding-top: 20px;
+  padding-bottom: 5rem;
+}
+.cp-box {
+  width: 900px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: white;
+  height: max-content;
+}
+
+.bullet {
+  list-style: unset;
+}
+.cp-box strong {
+  color: #09b1ba;
+  font-weight: 400;
+}
+.cp-box a:hover {
+  text-decoration: #09b1ba underline;
+}
+.cp-box li {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  color: #666666;
+}
+.cp-box p {
+  color: #666666;
+}
+
+@media (max-width:960px){
+    .cp-box{
+        width: 95%;
+    }
+}

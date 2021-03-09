@@ -208,15 +208,86 @@
   .catalog_tag {
     width: 6rem;
   }
+  .dropDown_menuBrand_container .catalog_list_div {
+    position: absolute;
+    left: -81px !important;
+  }
 }
 @media screen and (max-width: 516px) {
   .size_drop_down5 {
     margin-left: 0px;
   }
 }
+@media screen and (max-width: 488px) {
+  .dropDown_menuBrand_container .catalog_list_div {
+    position: absolute;
+    top: 25px;
+    left: -91px !important;
+  }
+}
+@media screen and (max-width: 468px) {
+  .dropDown_menuBrand_container .catalog_list_div {
+    position: absolute;
+    top: 15px;
+    left: -127px !important;
+  }
+  .dropDown_menucolor_container {
+    position: absolute;
+    left: 100px;
+  }
+  .dropDown_menuCondition_container {
+    left: 175px;
+  }
+}
+@media screen and (max-width: 466px) {
+  .dropDown_menuBrand_container .catalog_list_div {
+    position: absolute;
+    top: 4px;
+    left: 0px !important;
+  }
+  .dropDown_menucolor_container {
+    position: absolute;
+    left: 100px;
+  }
+  .dropDown_menuCondition_container {
+    left: 175px;
+  }
+}
+@media screen and (max-width: 459px) {
+  .dropDown_menuCondition_container .catalog_list_div {
+    position: absolute;
+    top: -3px;
+    left: -25px !important;
+  }
+}
+@media screen and (max-width: 435px) {
+  .dropDown_menuCondition_container .catalog_list_div {
+    position: absolute;
+    top: -3px;
+    left: -56px !important;
+  }
+}
 
+@media screen and (max-width: 384px) {
+  .dropDown_menusize_container {
+    left: 84px;
+  }
+}
+@media screen and (max-width: 367px) {
+  .dropDown_menuCondition_container {
+    left: 151px;
+  }
+}
 @media screen and (max-width: 361px) {
   .list_drop_downs {
     justify-content: space-around;
+  }
+  .dropDown_menuBrand_container{
+    left: 99px;
+  }
+}
+@media screen and (max-width: 342px) {
+  .dropDown_menuBrand_container {
+    left: 85px;
   }
 }
